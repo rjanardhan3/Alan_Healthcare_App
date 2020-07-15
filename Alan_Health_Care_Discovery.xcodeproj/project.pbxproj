@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F76E8A70319CEB41D01BE69 /* Pods_Alan_Health_Care_Discovery_Alan_Health_Care_DiscoveryUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B070492733BC7C02292DAC61 /* Pods_Alan_Health_Care_Discovery_Alan_Health_Care_DiscoveryUITests.framework */; };
 		4605530024ABE4F7006108C4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 460552FF24ABE4F7006108C4 /* AppDelegate.swift */; };
 		4605530224ABE4F7006108C4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4605530124ABE4F7006108C4 /* SceneDelegate.swift */; };
 		4605530424ABE4F7006108C4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4605530324ABE4F7006108C4 /* ViewController.swift */; };
@@ -15,6 +16,15 @@
 		4605530C24ABE4F7006108C4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4605530A24ABE4F7006108C4 /* LaunchScreen.storyboard */; };
 		4605531724ABE4F7006108C4 /* Alan_Health_Care_DiscoveryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4605531624ABE4F7006108C4 /* Alan_Health_Care_DiscoveryTests.swift */; };
 		4605532224ABE4F8006108C4 /* Alan_Health_Care_DiscoveryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4605532124ABE4F8006108C4 /* Alan_Health_Care_DiscoveryUITests.swift */; };
+		4605533024ABF355006108C4 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4605532F24ABF355006108C4 /* SearchViewController.swift */; };
+		464A5C0424AC07FB00CE65BC /* AddingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464A5C0324AC07FB00CE65BC /* AddingViewController.swift */; };
+		464A5C0624AC131B00CE65BC /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464A5C0524AC131B00CE65BC /* ProfileViewController.swift */; };
+		464A5C0A24AEB32E00CE65BC /* ContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464A5C0924AEB32E00CE65BC /* ContactsViewController.swift */; };
+		464F04AF24B4F570001A3E34 /* AlanImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464F04AE24B4F570001A3E34 /* AlanImplementation.swift */; };
+		469AEF0724B66D2E00142B44 /* AlanSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 465B994E24B668ED00C14414 /* AlanSDK.framework */; };
+		469AEF0824B66D2E00142B44 /* AlanSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 465B994E24B668ED00C14414 /* AlanSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A705EDE72E19CDE5B39C54E8 /* Pods_Alan_Health_Care_Discovery.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E106CF56ED668DB411C67BB8 /* Pods_Alan_Health_Care_Discovery.framework */; };
+		F89E328F984FE825624FC723 /* Pods_Alan_Health_Care_DiscoveryTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8076F06AE773693EBFE11E3 /* Pods_Alan_Health_Care_DiscoveryTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,7 +44,23 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		469AEF0924B66D2E00142B44 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				469AEF0824B66D2E00142B44 /* AlanSDK.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		22AFEE74779A99CD9B9E7772 /* Pods-Alan_Health_Care_DiscoveryTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Alan_Health_Care_DiscoveryTests.debug.xcconfig"; path = "Target Support Files/Pods-Alan_Health_Care_DiscoveryTests/Pods-Alan_Health_Care_DiscoveryTests.debug.xcconfig"; sourceTree = "<group>"; };
+		31E523C4FC9422A3FE93EFE6 /* Pods-Alan_Health_Care_Discovery.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Alan_Health_Care_Discovery.release.xcconfig"; path = "Target Support Files/Pods-Alan_Health_Care_Discovery/Pods-Alan_Health_Care_Discovery.release.xcconfig"; sourceTree = "<group>"; };
 		460552FC24ABE4F7006108C4 /* Alan_Health_Care_Discovery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Alan_Health_Care_Discovery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		460552FF24ABE4F7006108C4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4605530124ABE4F7006108C4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +75,20 @@
 		4605531D24ABE4F8006108C4 /* Alan_Health_Care_DiscoveryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Alan_Health_Care_DiscoveryUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4605532124ABE4F8006108C4 /* Alan_Health_Care_DiscoveryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alan_Health_Care_DiscoveryUITests.swift; sourceTree = "<group>"; };
 		4605532324ABE4F8006108C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4605532F24ABF355006108C4 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		464A5C0324AC07FB00CE65BC /* AddingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddingViewController.swift; sourceTree = "<group>"; };
+		464A5C0524AC131B00CE65BC /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		464A5C0924AEB32E00CE65BC /* ContactsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsViewController.swift; sourceTree = "<group>"; };
+		464F04AA24B39E47001A3E34 /* Alan_Health_Care_Discovery.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Alan_Health_Care_Discovery.entitlements; sourceTree = "<group>"; };
+		464F04AE24B4F570001A3E34 /* AlanImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlanImplementation.swift; sourceTree = "<group>"; };
+		465B994E24B668ED00C14414 /* AlanSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AlanSDK.framework; sourceTree = "<group>"; };
+		7DE2E2A6888C14C9E2881426 /* Pods-Alan_Health_Care_DiscoveryTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Alan_Health_Care_DiscoveryTests.release.xcconfig"; path = "Target Support Files/Pods-Alan_Health_Care_DiscoveryTests/Pods-Alan_Health_Care_DiscoveryTests.release.xcconfig"; sourceTree = "<group>"; };
+		93606C369FF8988ABDC32883 /* Pods-Alan_Health_Care_Discovery-Alan_Health_Care_DiscoveryUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Alan_Health_Care_Discovery-Alan_Health_Care_DiscoveryUITests.debug.xcconfig"; path = "Target Support Files/Pods-Alan_Health_Care_Discovery-Alan_Health_Care_DiscoveryUITests/Pods-Alan_Health_Care_Discovery-Alan_Health_Care_DiscoveryUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		AFDE745F49FD650525A6D545 /* Pods-Alan_Health_Care_Discovery-Alan_Health_Care_DiscoveryUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Alan_Health_Care_Discovery-Alan_Health_Care_DiscoveryUITests.release.xcconfig"; path = "Target Support Files/Pods-Alan_Health_Care_Discovery-Alan_Health_Care_DiscoveryUITests/Pods-Alan_Health_Care_Discovery-Alan_Health_Care_DiscoveryUITests.release.xcconfig"; sourceTree = "<group>"; };
+		B070492733BC7C02292DAC61 /* Pods_Alan_Health_Care_Discovery_Alan_Health_Care_DiscoveryUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Alan_Health_Care_Discovery_Alan_Health_Care_DiscoveryUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8076F06AE773693EBFE11E3 /* Pods_Alan_Health_Care_DiscoveryTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Alan_Health_Care_DiscoveryTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E106CF56ED668DB411C67BB8 /* Pods_Alan_Health_Care_Discovery.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Alan_Health_Care_Discovery.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F255ED65A9A1703B8E3E6EE0 /* Pods-Alan_Health_Care_Discovery.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Alan_Health_Care_Discovery.debug.xcconfig"; path = "Target Support Files/Pods-Alan_Health_Care_Discovery/Pods-Alan_Health_Care_Discovery.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +96,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A705EDE72E19CDE5B39C54E8 /* Pods_Alan_Health_Care_Discovery.framework in Frameworks */,
+				469AEF0724B66D2E00142B44 /* AlanSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +105,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F89E328F984FE825624FC723 /* Pods_Alan_Health_Care_DiscoveryTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,19 +113,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F76E8A70319CEB41D01BE69 /* Pods_Alan_Health_Care_Discovery_Alan_Health_Care_DiscoveryUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3F0625593E4D7AF461E4BA36 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F255ED65A9A1703B8E3E6EE0 /* Pods-Alan_Health_Care_Discovery.debug.xcconfig */,
+				31E523C4FC9422A3FE93EFE6 /* Pods-Alan_Health_Care_Discovery.release.xcconfig */,
+				93606C369FF8988ABDC32883 /* Pods-Alan_Health_Care_Discovery-Alan_Health_Care_DiscoveryUITests.debug.xcconfig */,
+				AFDE745F49FD650525A6D545 /* Pods-Alan_Health_Care_Discovery-Alan_Health_Care_DiscoveryUITests.release.xcconfig */,
+				22AFEE74779A99CD9B9E7772 /* Pods-Alan_Health_Care_DiscoveryTests.debug.xcconfig */,
+				7DE2E2A6888C14C9E2881426 /* Pods-Alan_Health_Care_DiscoveryTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		460552F324ABE4F7006108C4 = {
 			isa = PBXGroup;
 			children = (
+				465B994E24B668ED00C14414 /* AlanSDK.framework */,
 				460552FE24ABE4F7006108C4 /* Alan_Health_Care_Discovery */,
 				4605531524ABE4F7006108C4 /* Alan_Health_Care_DiscoveryTests */,
 				4605532024ABE4F8006108C4 /* Alan_Health_Care_DiscoveryUITests */,
 				460552FD24ABE4F7006108C4 /* Products */,
+				3F0625593E4D7AF461E4BA36 /* Pods */,
+				B57F415778BB3E8731909E45 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,9 +159,15 @@
 		460552FE24ABE4F7006108C4 /* Alan_Health_Care_Discovery */ = {
 			isa = PBXGroup;
 			children = (
+				464F04AA24B39E47001A3E34 /* Alan_Health_Care_Discovery.entitlements */,
 				460552FF24ABE4F7006108C4 /* AppDelegate.swift */,
 				4605530124ABE4F7006108C4 /* SceneDelegate.swift */,
 				4605530324ABE4F7006108C4 /* ViewController.swift */,
+				464A5C0924AEB32E00CE65BC /* ContactsViewController.swift */,
+				464A5C0524AC131B00CE65BC /* ProfileViewController.swift */,
+				4605532F24ABF355006108C4 /* SearchViewController.swift */,
+				464F04AE24B4F570001A3E34 /* AlanImplementation.swift */,
+				464A5C0324AC07FB00CE65BC /* AddingViewController.swift */,
 				4605530524ABE4F7006108C4 /* Main.storyboard */,
 				4605530824ABE4F7006108C4 /* Assets.xcassets */,
 				4605530A24ABE4F7006108C4 /* LaunchScreen.storyboard */,
@@ -128,6 +194,16 @@
 			path = Alan_Health_Care_DiscoveryUITests;
 			sourceTree = "<group>";
 		};
+		B57F415778BB3E8731909E45 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E106CF56ED668DB411C67BB8 /* Pods_Alan_Health_Care_Discovery.framework */,
+				B070492733BC7C02292DAC61 /* Pods_Alan_Health_Care_Discovery_Alan_Health_Care_DiscoveryUITests.framework */,
+				B8076F06AE773693EBFE11E3 /* Pods_Alan_Health_Care_DiscoveryTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +211,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4605532624ABE4F8006108C4 /* Build configuration list for PBXNativeTarget "Alan_Health_Care_Discovery" */;
 			buildPhases = (
+				E05E9501946CFC6683387563 /* [CP] Check Pods Manifest.lock */,
 				460552F824ABE4F7006108C4 /* Sources */,
 				460552F924ABE4F7006108C4 /* Frameworks */,
 				460552FA24ABE4F7006108C4 /* Resources */,
+				464F04AD24B39E68001A3E34 /* ShellScript */,
+				469AEF0924B66D2E00142B44 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +231,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4605532924ABE4F8006108C4 /* Build configuration list for PBXNativeTarget "Alan_Health_Care_DiscoveryTests" */;
 			buildPhases = (
+				8D6EDC8F80F83EAFAE4032E0 /* [CP] Check Pods Manifest.lock */,
 				4605530E24ABE4F7006108C4 /* Sources */,
 				4605530F24ABE4F7006108C4 /* Frameworks */,
 				4605531024ABE4F7006108C4 /* Resources */,
@@ -170,6 +250,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4605532C24ABE4F8006108C4 /* Build configuration list for PBXNativeTarget "Alan_Health_Care_DiscoveryUITests" */;
 			buildPhases = (
+				62EBE22505234BA794E0585F /* [CP] Check Pods Manifest.lock */,
 				4605531924ABE4F8006108C4 /* Sources */,
 				4605531A24ABE4F8006108C4 /* Frameworks */,
 				4605531B24ABE4F8006108C4 /* Resources */,
@@ -254,13 +335,104 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		464F04AD24B39E68001A3E34 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 12;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nsh \"/Users/rajjanardhan/Desktop/Alan_Health_Care_Discovery/AlanSDK.framework/frameworks-strip.sh\"\n";
+		};
+		62EBE22505234BA794E0585F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Alan_Health_Care_Discovery-Alan_Health_Care_DiscoveryUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8D6EDC8F80F83EAFAE4032E0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Alan_Health_Care_DiscoveryTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E05E9501946CFC6683387563 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Alan_Health_Care_Discovery-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		460552F824ABE4F7006108C4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				464A5C0624AC131B00CE65BC /* ProfileViewController.swift in Sources */,
+				464A5C0A24AEB32E00CE65BC /* ContactsViewController.swift in Sources */,
 				4605530424ABE4F7006108C4 /* ViewController.swift in Sources */,
 				4605530024ABE4F7006108C4 /* AppDelegate.swift in Sources */,
+				464A5C0424AC07FB00CE65BC /* AddingViewController.swift in Sources */,
+				464F04AF24B4F570001A3E34 /* AlanImplementation.swift in Sources */,
+				4605533024ABF355006108C4 /* SearchViewController.swift in Sources */,
 				4605530224ABE4F7006108C4 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -432,9 +604,16 @@
 		};
 		4605532724ABE4F8006108C4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F255ED65A9A1703B8E3E6EE0 /* Pods-Alan_Health_Care_Discovery.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Alan_Health_Care_Discovery/Alan_Health_Care_Discovery.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 276Y8K2A8X;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = Alan_Health_Care_Discovery/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -449,9 +628,16 @@
 		};
 		4605532824ABE4F8006108C4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 31E523C4FC9422A3FE93EFE6 /* Pods-Alan_Health_Care_Discovery.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Alan_Health_Care_Discovery/Alan_Health_Care_Discovery.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 276Y8K2A8X;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = Alan_Health_Care_Discovery/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -466,6 +652,7 @@
 		};
 		4605532A24ABE4F8006108C4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 22AFEE74779A99CD9B9E7772 /* Pods-Alan_Health_Care_DiscoveryTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -487,6 +674,7 @@
 		};
 		4605532B24ABE4F8006108C4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7DE2E2A6888C14C9E2881426 /* Pods-Alan_Health_Care_DiscoveryTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -508,6 +696,7 @@
 		};
 		4605532D24ABE4F8006108C4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 93606C369FF8988ABDC32883 /* Pods-Alan_Health_Care_Discovery-Alan_Health_Care_DiscoveryUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -527,6 +716,7 @@
 		};
 		4605532E24ABE4F8006108C4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AFDE745F49FD650525A6D545 /* Pods-Alan_Health_Care_Discovery-Alan_Health_Care_DiscoveryUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
