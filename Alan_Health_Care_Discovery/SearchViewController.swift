@@ -97,6 +97,15 @@ class SearchViewController: UIViewController {
                 }
                 button.activate()
             }
+            else if(str["screen"] as! String == "hoverrover" ){
+                let t = str["command"] as! NSDictionary
+                let tt = t["value"] as! String
+                let pvc = ProfileViewController()
+                tempo = tt
+                pvc.curr_patient = tempo
+                thisthingy = true
+                self.performSegue(withIdentifier: "searchis", sender: nil)
+            }
             else if(str["screen"] as! String == "thisthang"){
                 let ttt = str["command"] as! NSDictionary
                 var tttt = ttt["value"] as! String

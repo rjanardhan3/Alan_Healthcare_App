@@ -1,0 +1,6 @@
+framework module Pods_Alan_Health_Care_DiscoveryTests {
+  umbrella header "Pods-Alan_Health_Care_DiscoveryTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

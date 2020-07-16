@@ -312,6 +312,7 @@
                         <segue destination="dXb-GS-O4P" kind="show" identifier="searchis" id="XQP-b4-Vvg"/>
                         <segue destination="91D-Nw-zQS" kind="show" identifier="remembercontact" id="ZmO-dB-Wa6"/>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="gohome" id="HJC-Sn-Xfj"/>
+                        <segue destination="dXb-GS-O4P" kind="show" identifier="movin" id="JQT-C6-yaS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="R1e-eK-Ai9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -364,7 +365,7 @@
             <objects>
                 <viewController id="dXb-GS-O4P" customClass="ProfileViewController" customModule="Alan_Health_Care_Discovery" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7pV-Vg-DqS">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Patient Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Rq-DU-CcL">
@@ -490,11 +491,11 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="XQP-b4-Vvg"/>
+        <segue reference="JQT-C6-yaS"/>
         <segue reference="hRa-yR-7z4"/>
         <segue reference="xsX-fm-E3g"/>
-        <segue reference="ZAU-sX-aF7"/>
-        <segue reference="8sq-Va-f6c"/>
+        <segue reference="ZmO-dB-Wa6"/>
+        <segue reference="xse-pK-NyR"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="realhouse" width="512" height="512"/>

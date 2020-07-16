@@ -22,6 +22,9 @@ class AddingViewController: UIViewController {
         
         return false
     }
+    
+    var couldbecurr: String!
+    
     @IBOutlet weak var RBCtf: UITextField!
     @IBOutlet weak var heartratetf: UITextField!
     @IBOutlet weak var idtf: UITextField!
@@ -105,7 +108,8 @@ class AddingViewController: UIViewController {
             else if(str["screen"] as! String == "BP"){
                 //let thistemp = tempoo["number"] as! NSString
              //   BPtf.text = thistemp as String
-                
+                let thistemp = str["command"] as! String
+                BPtf.text = thistemp as! String
             }
             else if(str["screen"] as! String == "name"){
                // let thistemp = tempoo["number"] as! NSString
@@ -117,6 +121,11 @@ class AddingViewController: UIViewController {
             }
             else if(str["screen"] as! String == "home"){
                 self.performSegue(withIdentifier: "gohome", sender: nil)
+            }
+            else if(str["screen"] as! String == "hoverrover"){
+                let tem = str["command"] as! NSDictionary
+                couldbecurr = tem["value"] as? String
+                self.performSegue(withIdentifier: "movin", sender: nil)
             }
         }
         
@@ -263,6 +272,10 @@ class AddingViewController: UIViewController {
                 //dc.RBC.text! = RBCtf.text!
             }
             
+        }
+        else if(segue.identifier == "movin"){
+            let dc = segue.destination as! ProfileViewController
+            dc.curr_patient = couldbecurr
         }
         
         

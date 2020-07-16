@@ -41,7 +41,7 @@ class ContactsViewController: UIViewController{
                 issa = tt
                 self.performSegue(withIdentifier: "addingpatients", sender: nil)
             }
-            else if(str["screen"] as! String == "movingtodata"){
+            else if(str["screen"] as! String == "movingtodata" || str["screen"] as! String == "hoverrover"){
                 var thistemp = str["command"] as! NSDictionary
                 issa = thistemp["value"] as! String
                 self.performSegue(withIdentifier: "searchis", sender: nil)

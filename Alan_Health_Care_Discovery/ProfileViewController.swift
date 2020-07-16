@@ -18,6 +18,79 @@ extension String {
 class ProfileViewController: UIViewController {
     var button: AlanButton!
     var currpatient: String!
+    
+    
+    
+    var bpbool = false
+    var RBCbool = false
+    var WBCbool = false
+    var HRbool = false
+    var IDbool = false
+    var cc = 0
+    
+    @objc func fire(){
+        if(cc > 5){
+            return
+        }
+        else if(bpbool){
+            cc += 1
+            BP.isHighlighted = false
+            bpbool = false
+            HR.isHighlighted = true
+            HR.highlightedTextColor = #colorLiteral(red: 0.5058823824, green: 0.3372549117, blue: 0.06666667014, alpha: 1)
+            HRbool = true
+        }
+        else if(RBCbool){
+            cc += 1
+            IDbool = true
+            ID.isHighlighted = true
+            ID.highlightedTextColor = #colorLiteral(red: 0.5058823824, green: 0.3372549117, blue: 0.06666667014, alpha: 1)
+            RBC.isHighlighted = false
+            RBCbool = false
+        }
+        else if(WBCbool){
+            cc += 1
+            RBC.isHighlighted = true
+            RBC.highlightedTextColor = #colorLiteral(red: 0.5058823824, green: 0.3372549117, blue: 0.06666667014, alpha: 1)
+            RBCbool = true
+            WBC.isHighlighted = false
+            WBCbool = false
+        }
+        else if(HRbool){
+            cc += 1
+            WBC.isHighlighted = true
+            WBC.highlightedTextColor = #colorLiteral(red: 0.5058823824, green: 0.3372549117, blue: 0.06666667014, alpha: 1)
+            HRbool = false
+            HR.isHighlighted = false
+            WBCbool = true
+        }
+        else if(IDbool){
+            cc += 1
+            IDbool = false
+            ID.isHighlighted = false
+        }
+        /*
+        switch tf{
+            case("bp"):
+                BP.isHighlighted = false
+                break
+            case("RBC"):
+                RBC.isHighlighted = false
+                break
+            case("WBC"):
+                WBC.isHighlighted = false
+                break
+            case("HR"):
+                HR.isHighlighted = false
+                break
+            case("ID"):
+                ID.isHighlighted = false
+                break
+            default:
+                break
+        }*/
+    }
+    
     func isitanInt(value: String) -> Bool{
         if(value == ""){
             return true
@@ -103,6 +176,18 @@ class ProfileViewController: UIViewController {
                 }
                 
             }
+            else if(str["screen"] as! String == "healthyRBC" || str["screen"] as! String == "healthyBP"){
+                button.callProjectApi("setcurrpatient", withData: ["value": name.text!]){(_, _) in
+                
+                }
+            }
+            else if(str["screen"] as! String == "setName" || str["screen"] as! String == "healthyHR"){
+               // button.setVisualState(["curr": name.text!])
+                //button.setVisualState(["screen": name.text!])
+                button.callProjectApi("setcurrpatient", withData: ["value": name.text!]){(_, _) in
+ 
+                }
+            }
             else if(str["screen"] as! String == "RBC"){
                 var temp = str["command"] as! NSDictionary
                 var temp2 = temp["value"] as! String
@@ -172,45 +257,51 @@ class ProfileViewController: UIViewController {
                         BP.text = "BP: " + dat[tem2]![4]
                         HR.text = "HR: " + dat[tem2]![5]
                     }
- 
+                    
+                    
                     BP.isHighlighted = true
                     BP.highlightedTextColor = #colorLiteral(red: 0.9334612489, green: 1, blue: 0, alpha: 1)
-                    
+                    bpbool = true
+                    var timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(fire), userInfo: nil, repeats: true)
+                    //timer.fire()
                     //sleep(1)
                     var str = dat[name.text!]![4]
                     //button.playText("The patient's blood pressure is " + str)
-                    BP.isHighlighted = false
+                    
+                    //BP.isHighlighted = false
+                    /*
                     HR.isHighlighted = true
                     HR.highlightedTextColor = #colorLiteral(red: 0.9467340112, green: 1, blue: 0, alpha: 1)
+ */
                     //sleep(1)
                     str = dat[name.text!]![5]
                     //button.playText("The patient's heart rate is " + str)
-                    HR.isHighlighted = false
-                    WBC.isHighlighted = true
-                    WBC.highlightedTextColor = #colorLiteral(red: 0.8686456084, green: 1, blue: 0, alpha: 1)
+                    //HR.isHighlighted = false
+                    //WBC.isHighlighted = true
+                    //WBC.highlightedTextColor = #colorLiteral(red: 0.8686456084, green: 1, blue: 0, alpha: 1)
                     //sleep(1)
                     str = dat[name.text!]![2]
                    // button.playText("The patient's white blood cell count is " + str)
-                    WBC.isHighlighted = false
-                    RBC.isHighlighted = true
-                    RBC.highlightedTextColor = #colorLiteral(red: 0.8024414778, green: 1, blue: 0, alpha: 1)
+                    //WBC.isHighlighted = false
+                    //RBC.isHighlighted = true
+                    //RBC.highlightedTextColor = #colorLiteral(red: 0.8024414778, green: 1, blue: 0, alpha: 1)
                     //sleep(1)
                     str = dat[name.text!]![3]
                    // button.playText("The patient's red blood cell count is " + str)
-                    RBC.isHighlighted = false
-                    ID.isHighlighted = true
-                    ID.highlightedTextColor = #colorLiteral(red: 1, green: 0.9659166932, blue: 0.1538560092, alpha: 1)
+                    //RBC.isHighlighted = false
+                    //ID.isHighlighted = true
+                   // ID.highlightedTextColor = #colorLiteral(red: 1, green: 0.9659166932, blue: 0.1538560092, alpha: 1)
                     //sleep(1)
                     str = dat[name.text!]![0]
                   //  button.playText("The patient's ID is " + str)
                     
-                    HR.isHighlighted = true
-                    HR.highlightedTextColor = #colorLiteral(red: 0.9355748892, green: 0.8926454186, blue: 0.3701760769, alpha: 1)
+                   // HR.isHighlighted = true
+                    //HR.highlightedTextColor = #colorLiteral(red: 0.9355748892, green: 0.8926454186, blue: 0.3701760769, alpha: 1)
                     //sleep(1)
-                    HR.isHighlighted = false
+                   // HR.isHighlighted = false
                     
                 }
-                
+                //button.setVisualState(["screen": "profile_screen"])
                 
             }
             else if(str["screen"] as! String == "updateData"){
@@ -290,6 +381,7 @@ class ProfileViewController: UIViewController {
         }
         
     }
+    
     
     var checko = false
     @IBOutlet weak var ID: UILabel!
@@ -466,6 +558,9 @@ class ProfileViewController: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        
+                        
         let config = AlanConfig(key: "d1dff9e61d903c7ca3bd654b10e6806c2e956eca572e1d8b807a3e2338fdd0dc/stage")
         BP.isHighlighted = true
         BP.highlightedTextColor = #colorLiteral(red: 0.9529411793, green: 0.6862745285, blue: 0.1333333403, alpha: 1)
@@ -482,6 +577,7 @@ class ProfileViewController: UIViewController {
         name:NSNotification.Name(rawValue: "kAlanSDKEventNotification"), object:nil)
         
         button.setVisualState(["screen": "profile_screen"])
+        
         button.activate()
         print(RBClabel)
         print("view loaded")
@@ -668,7 +764,13 @@ class ProfileViewController: UIViewController {
             print(i)
             
         }
+        
+       // button.setVisualState(["curr": name.text!])
+        
         currpatient = name.text!
+        button.callProjectApi("setClientData", withData: ["value": name.text!]){ (_, _) in
+            
+        }
         /*
         if(name.text! == "Reggie Parker"){
             currpatient = "Reggie Parker"
